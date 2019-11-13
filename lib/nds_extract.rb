@@ -92,7 +92,7 @@ def movies_with_directors_set(source)
   while nds_index < source.count do
     name = source[nds_index][:name]
     movie = source[nds_index][:movie]
-    movie_array[nds_index] = movies_with_director_name(name, movie)
+    movie_array[nds_index] = movie_with_director_name(name, movie)
     nds_index += 1
   end
   movie_array
