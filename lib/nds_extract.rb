@@ -83,7 +83,7 @@ def adds_all_movies_to_array(source, index)
     dir_name_added[movie_index] = movies_with_director_key(name, all_movies[movie_index])
     movie_index += 1
   end
-
+  array
 end
 
 def movies_with_directors_set(source)
