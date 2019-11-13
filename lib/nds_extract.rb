@@ -74,6 +74,10 @@ def gross_per_studio(collection)
   # total of all the worldwide_gross numbers for every movie in the input Hash
 end
 
+def adds_all_movies_to_array(source)
+  
+end
+
 def movies_with_directors_set(source)
   # GOAL: For each director, find their :movies Array and stick it in a new Array
   #
@@ -94,7 +98,7 @@ def movies_with_directors_set(source)
     movie_place = source[nds_index][:movies]
     while movie_index < movie_place.count do
       name = source[nds_index][:name]
-      dir_name_added << movies_with_director_key(name, movie_place[movie_index])
+      dir_name_added[movie_index] = movies_with_director_key(name, movie_place[movie_index])
       movie_index += 1
     end
     movie_array << dir_name_added
