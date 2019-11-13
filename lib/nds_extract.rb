@@ -79,6 +79,7 @@ def adds_all_movies_to_array(source, index)
   movie_index = 0
   all_movies = source[index][:movies]
   while movie_index < all_movies.count do
+    result = []
     name = source[index][:name]
     result = movies_with_director_key(name, all_movies[movie_index])
     array[movie_index] = result[0]
