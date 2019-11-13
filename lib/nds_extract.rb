@@ -83,7 +83,7 @@ def adds_all_movies_to_array(source, index)
     result = []
     name = source[index][:name]
     result[0] = movies_with_director_key(name, all_movies[movie_index])
-    array[movie_index] = result[0]
+    array[movie_index] = result[0][0]
     movie_index += 1
   end
 
