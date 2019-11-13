@@ -77,12 +77,13 @@ end
 def adds_all_movies_to_array(source, index)
   array = []
   movie_index = 0
-  movie_place = source[index][:movies]
-  while movie_index < movie_place.count do
-    name = source[nds_index][:name]
-    dir_name_added[movie_index] = movies_with_director_key(name, movie_place[movie_index])
+  all_movies = source[index][:movies]
+  while movie_index < all_movies.count do
+    name = source[index][:name]
+    dir_name_added[movie_index] = movies_with_director_key(name, all_movies[movie_index])
     movie_index += 1
   end
+  
 end
 
 def movies_with_directors_set(source)
