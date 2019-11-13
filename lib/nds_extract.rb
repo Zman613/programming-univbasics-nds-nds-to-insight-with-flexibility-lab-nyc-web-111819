@@ -80,7 +80,8 @@ def adds_all_movies_to_array(source, index)
   all_movies = source[index][:movies]
   while movie_index < all_movies.count do
     name = source[index][:name]
-    dir_name_added[movie_index] = movies_with_director_key(name, all_movies[movie_index])
+    result = movies_with_director_key(name, all_movies[movie_index])
+    array[movie_index] = result[0]
     movie_index += 1
   end
   array
