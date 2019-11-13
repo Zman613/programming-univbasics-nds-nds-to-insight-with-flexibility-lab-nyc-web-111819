@@ -75,7 +75,7 @@ def gross_per_studio(collection)
 end
 
 def adds_all_movies_to_array(source)
-  
+
 end
 
 def movies_with_directors_set(source)
