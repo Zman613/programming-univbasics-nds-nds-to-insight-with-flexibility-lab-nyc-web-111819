@@ -101,7 +101,7 @@ def movies_with_directors_set(source)
       dir_name_added[movie_index] = movies_with_director_key(name, movie_place[movie_index])
       movie_index += 1
     end
-    movie_array << dir_name_added
+    movie_array[nds_index] = dir_name_added
     nds_index += 1
   end
   movie_array
